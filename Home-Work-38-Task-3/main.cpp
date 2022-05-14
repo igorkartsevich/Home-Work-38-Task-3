@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
         QPixmap pix;
         pix.load(filePath);
 
+        labelImage->setAlignment(Qt::AlignCenter);
         labelImage->setPixmap(pix.scaled(
                                             labelImage->width(),
                                             labelImage->height(),
